@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profolio</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/png" href="./contact-content/images/icons/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./contact-content/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="./contact-content/css/main.css">
 </head>
 <body>
     
@@ -16,15 +21,17 @@
                <ul>
                  <li><a href="#portfolio">My work</a></li>
                  <li><a href="#skills">My skills</a></li>
-                 <li><a href="#">Contact me</a></li>
+                 <li><a href="#contact-me">Contact me</a></li>
+                 <li><a href="./images/YashwanthMaddulaResume.pdf" class="button" ><i class="fa fa-download"></i>Download CV</a></li>
                </ul>
             </nav>
         </header>
         <div class="social-header">
             <ul>
-                <li><a href="#"><img src="./images/gmail.png" alt="gmail"></a></li>
+                <li><a href="mailto:yash868686reddy@gmail.com"><img src="./images/gmail.png" alt="gmail"></a></li>
                 <li><a href="https://twitter.com/yashwan29487080"><img src="./images/twitter.png" alt="twitter"></a></li>
                 <li><a href="https://github.com/yashwanthreddy8686"><img src="./images/github-logo.png" alt="github-logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/yashwanth-reddy-maddula-837507143"><img src="./images/icons8-linkedin-24.png" alt="linkedIn-logo"></a></li>
             </ul>
         </div>
     </div>
@@ -59,29 +66,30 @@
                     experience and knowledge of JavaScript MVC framework like AngularJS, CSS framework like Bootstrap. </p>
             </div>
         </div>
-        <img src="" alt="Featured Project" class="right transition2">
+        <img src="./images/feature-image.jpeg" alt="Featured Project" class="right transition2">
     </section>
 
     <section class="skills" id="skills">
+        <h2>Technical skills</h2>
         <div class="skills-container">
             <ul>
                 <li class="transition2">
                     <div class="icon-container one">
-                        <img src="" alt="front-end-technologies">
+                        <img src="./images/anglebracket.png" alt="front-end-technologies">
                     </div>
                     <p class="skill-title">Web Technologies and Frameworks</p>
                     <p class="features-desc skill-desc">NODEJS, REACT, PHP, HTML5, CSS3</p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container two">
-                        <img src="" alt="front-end-technologies">
+                        <img src="./images/web-lodo.png" alt="front-end-technologies">
                     </div>
                     <p class="skill-title">Scripts/UI</p>
                     <p class="features-desc skill-desc">JAVASCRIPT, JQUERY, BOOTSTRAP</p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container three">
-                        <img src="" alt="front-end-technologies">
+                        <img src="./images/computer-programming.jpg" alt="front-end-technologies">
                     </div>
                     <p class="skill-title">Programming Languages</p>
                     <p class="features-desc skill-desc">JAVA, C, C#</p>
@@ -110,6 +118,7 @@
                     <p class="featured-title">REACTJS, NEXTJS, DJANGO</p>
                     <p class="featured-desc">Docket is a comprehensive project management solution that combines all the features required for teams to manage
                          software development processes, where teams can create projects, create tasks, create sprints and assign team members to it and track the progress of it</p>
+                    <a href="https://github.com/yashwanthreddy8686/docket-web/tree/master"><i class="fa fa-github" aria-hidden="true"></i> View this project's code on Github</a>
                 </div>
             </div>
             <a href="#"><img src="./images/home.png" alt="Docket-DashBoard"></a>
@@ -122,12 +131,73 @@
                     <p class="featured-desc">Basically, the app will be able to search for movies via the OMDB API and render the results to the user.
                         The reason for building the app is just so that we can get a better understanding of using REACT HOOKS in an application, which helps in understanding the role some of the hooks we will use can play in your own real-world apps.
                     </p>
+                    <a href="https://github.com/yashwanthreddy8686/movie-buzz"><i class="fa fa-github" aria-hidden="true"></i> View this project's code on Github</a>
                 </div>
             </div>
             <a href="#"><img src="./images/moviebuzz.png" alt="Docket-DashBoard"></a>
         </div>
     </section>
+    <section class="skills">
+        <h2>Education</h2>
+        <div class="skills-container">
+            <ul>
+                <li class="transition2">
+                    <p class="skill-title">Programming and Web Technologies, AEC</p>
+                    <p class="features-desc skill-desc">ISI – Institut supérieur d'Informatique | Montreal</p>
+                    <p>2020</p>
+                </li>
+                <li class="transition2">
+                    <p class="skill-title">Bachelor of Technology in Computer Science and Technology</p>
+                    <p class="features-desc skill-desc">Vardhaman College of Engineering | India</p>
+                    <p>2018</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-
+    <section id="contact-me">
+        <div class="contact1">
+            <div class="container-contact1">
+                <div class="contact1-pic js-tilt" data-tilt>
+                    <img src="./contact-content/images/img-01.png" alt="IMG">
+                </div>
+    
+                <form class="contact1-form validate-form">
+                    <span class="contact1-form-title">
+                        Get in touch
+                    </span>
+    
+                    <div class="wrap-input1 validate-input" data-validate = "Name is required">
+                        <input class="input1" type="text" name="name" placeholder="Name">
+                        <span class="shadow-input1"></span>
+                    </div>
+    
+                    <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                        <input class="input1" type="text" name="email" placeholder="Email">
+                        <span class="shadow-input1"></span>
+                    </div>
+    
+                    <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+                        <input class="input1" type="text" name="subject" placeholder="Subject">
+                        <span class="shadow-input1"></span>
+                    </div>
+    
+                    <div class="wrap-input1 validate-input" data-validate = "Message is required">
+                        <textarea class="input1" name="message" placeholder="Message"></textarea>
+                        <span class="shadow-input1"></span>
+                    </div>
+    
+                    <div class="container-contact1-form-btn">
+                        <button class="contact1-form-btn">
+                            <span>
+                                Send Email
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
